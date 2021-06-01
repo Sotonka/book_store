@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <span id="badge" >
+        {{ user.username }}
+    </span>
+
+    <div>
+        <h3>GET</h3>
+        <textarea  id="data" cols="100" rows="20"></textarea>
+        <button id="btn1">get</button>
+        <button id="btn2">filter price = 999</button>
+        <button id="btn4">ordering price</button>
+        <div>
+            <input id="inp">
+           <button id="btn3">search</button>
+        </div>
+    </div>
+
+    <div>
+        <h3>POST</h3>
+        <h5>name</h5>
+        <input id="nm">
+        <h5>price</h5>
+        <input id="pr">
+        <h5>author</h5>
+        <input id="au">
+        <button id="btn5">post</button>
+    </div>
+    <textarea  id="csr" cols="100" rows="5">{% csrf_token %}</textarea>
+
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

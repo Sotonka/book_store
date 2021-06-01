@@ -23,3 +23,6 @@ class BookViewSet(ModelViewSet):
 
 def auth(request):
     return render(request, 'oauth.html')
+
+def test(request):
+    return render(request, 'test.html')
