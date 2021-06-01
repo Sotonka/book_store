@@ -5,7 +5,6 @@ function sendRequest(method, url, body = null) {
         return response.text()
     })
 }
-token = document.getElementById("csr").value.split('value=')[1].slice(1, -2)
 
 function sendRequest2(method, url, body = null) {
     const headers = {
